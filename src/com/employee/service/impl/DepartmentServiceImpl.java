@@ -71,6 +71,18 @@ public class DepartmentServiceImpl implements DepartmentService
 		
 	}
 	
+	//部门删除
+
+	@Override
+	public void delete(Department department)
+	{
+		// TODO Auto-generated method stub
+		departmentDao.delete(department);
+		
+	}
+	
+	
+	
 	
 	
 

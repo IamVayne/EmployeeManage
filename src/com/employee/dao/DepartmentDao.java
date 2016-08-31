@@ -15,5 +15,7 @@ public interface DepartmentDao
 
 	void update(Department department);
 
+	void delete(Department department);
+
 
 }

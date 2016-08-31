@@ -29,13 +29,14 @@
 <br/>
 <table cellspacing="0" border="1" class="table1">
 <thead>
-   <tr><th width="450">部门名称</th><th  width="450">编辑</th></tr>
+   <tr><th width="300">部门名称</th><th  width="300">编辑</th><th  width="300">删除</th></tr>
 </thead>
 <s:iterator value="list" var="d">
 <tbody>
 <tr>
 <td align="center"><s:property value="#d.dname"/></td>
 <td align="center"><a href="${pageContext.request.contextPath }/department_edit.action?did=<s:property value="#d.did"/>"><img src="${pageContext.request.contextPath}/images/bj.png"/></a></td>
+<td align="center"><a href="${pageContext.request.contextPath }/department_delete.action?did=<s:property value="#d.did"/>"><img src="${pageContext.request.contextPath}/images/delete.png" width="28" height="28"/></a></td>
 </tr>
 </tbody>
 </s:iterator>

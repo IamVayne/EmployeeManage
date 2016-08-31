@@ -74,6 +74,16 @@ public class DepartmentAction extends ActionSupport implements ModelDriven<Depar
 		return "updateSuccess";
 	}
 	
+	//完成部门的删除
+	public String delete()
+	{
+		department = departmentService.findById(department.getDid());
+		
+		departmentService.delete(department);
+		
+		return "deleteSuccess";
+	}
+	
 	
 	
 	
