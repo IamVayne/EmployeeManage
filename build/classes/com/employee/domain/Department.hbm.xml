@@ -14,7 +14,7 @@
         <property name="ddesc" type="java.lang.String">
             <column name="ddesc" />
         </property>
-        <set name="employees">
+        <set name="employees" cascade="delete" inverse="true">
             <key>
                 <column name="dno" />
             </key>
