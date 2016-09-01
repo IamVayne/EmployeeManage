@@ -18,6 +18,7 @@
 	<!-- 配置action类 -->
 	<bean id="employeeAction" class="com.employee.action.EmployeeAction" scope="prototype">
 		<property name="employeeService" ref="employeeService"></property>
+		<property name="departmentService" ref="departmentService"></property>
 	</bean>
 	
 	<bean id="departmentAction" class="com.employee.action.DepartmentAction" scope="prototype">

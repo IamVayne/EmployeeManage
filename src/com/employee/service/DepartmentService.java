@@ -1,6 +1,9 @@
 package com.employee.service;
 
 import com.employee.domain.PageBean;
+
+import java.util.List;
+
 import com.employee.domain.Department;
 
 public interface DepartmentService
@@ -19,5 +22,8 @@ public interface DepartmentService
 
 
 	void delete(Department department);
+
+
+	List<Department> findAll();
 
 }

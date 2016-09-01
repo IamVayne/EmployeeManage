@@ -29,6 +29,6 @@
         <property name="password" type="java.lang.String">
             <column name="password" />
         </property>
-        <many-to-one name="department" class="com.employee.domain.Department" column="dno"/>
+        <many-to-one name="department" class="com.employee.domain.Department" lazy="false" column="dno" cascade="all"/>
     </class>
 </hibernate-mapping>

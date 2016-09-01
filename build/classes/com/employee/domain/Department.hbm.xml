@@ -18,7 +18,7 @@
             <key>
                 <column name="dno" />
             </key>
-            <one-to-many class="com.employee.domain.Employee" />
+            <one-to-many class="com.employee.domain.Employee"/>
         </set>
     </class>
 </hibernate-mapping>

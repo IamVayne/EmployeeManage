@@ -80,6 +80,15 @@ public class DepartmentServiceImpl implements DepartmentService
 		departmentDao.delete(department);
 		
 	}
+
+	//查询所有部门
+	@Override
+	public List<Department> findAll()
+	{
+		return departmentDao.findAll();
+	}
+	
+	
 	
 	
 	
