@@ -6,6 +6,9 @@ import com.employee.domain.PageBean;
 import com.employee.service.DepartmentService;
 import java.util.List;
 
+import org.springframework.transaction.annotation.Transactional;
+
+@Transactional
 public class DepartmentServiceImpl implements DepartmentService
 {
 	private DepartmentDao departmentDao;
